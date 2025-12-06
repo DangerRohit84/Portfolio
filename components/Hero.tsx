@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
       </p>
 
       <div className="flex gap-6 mb-16">
-        <a href="https://github.com" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-green-500/20 text-white hover:text-green-400 transition-colors border border-white/10 hover:border-green-500/50">
+        <a href="https://github.com/DangerRohit84" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-green-500/20 text-white hover:text-green-400 transition-colors border border-white/10 hover:border-green-500/50">
           <Github size={24} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-green-500/20 text-white hover:text-green-400 transition-colors border border-white/10 hover:border-green-500/50">
+        <a href="https://www.linkedin.com/in/rohit-desina/" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-green-500/20 text-white hover:text-green-400 transition-colors border border-white/10 hover:border-green-500/50">
           <Linkedin size={24} />
         </a>
         <a href="mailto:desinarohit2007@gmail.com" className="p-3 rounded-full bg-white/5 hover:bg-green-500/20 text-white hover:text-green-400 transition-colors border border-white/10 hover:border-green-500/50">
