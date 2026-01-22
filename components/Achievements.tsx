@@ -29,7 +29,7 @@ const Achievements: React.FC = () => {
       value: "1000+",
       desc: "Coding Problems",
       icon: <CodeChefIcon />,
-      url: "https://www.codechef.com/users/dangerrohit84"
+      url: "https://www.codechef.com/users/danger_rohit84"
     },
     {
       label: "LeetCode",
