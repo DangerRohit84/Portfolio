@@ -111,7 +111,6 @@ const App: React.FC = () => {
                 <div className="p-6 bg-green-500/10 rounded-3xl text-green-500">{selectedProject.icon}</div>
                 <div>
                   <h3 className="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">{selectedProject.title}</h3>
-                  <p className="text-green-500/80 text-[10px] font-black uppercase tracking-[0.6em] mt-2">Core System Loaded</p>
                 </div>
               </div>
               <button onClick={handleCloseProject} className="p-6 bg-white/5 hover:bg-green-500 hover:text-black rounded-full text-white transition-all duration-500 group">
