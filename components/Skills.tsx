@@ -1,36 +1,37 @@
+
 import React from 'react';
-import { Code2, Database, Terminal, Cpu, BookOpen, BarChart } from 'lucide-react';
+import { Code2, Database, Terminal, Globe, BookOpen, BarChart } from 'lucide-react';
 
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Programming",
       icon: <Code2 className="text-green-400" />,
-      skills: ["C", "C++", "Python", "HTML (Basics)", "CSS (Basics)"]
+      skills: ["C", "C++", "Python", "Java"]
     },
     {
-      title: "Core Concepts",
-      icon: <BookOpen className="text-green-400" />,
-      skills: ["Data Structures", "Algorithms", "OOP", "DBMS", "Operating Systems (Linux)"]
+      title: "Web Skills",
+      icon: <Globe className="text-green-400" />,
+      skills: ["HTML", "CSS", "ReactJS", "TypeScript", "Node.JS", "JavaScript"]
     },
     {
-      title: "Databases",
+      title: "Data",
       icon: <Database className="text-green-400" />,
-      skills: ["Oracle", "SQL"]
+      skills: ["MySQL", "MongoDB", "Oracle", "SQL"]
     },
     {
-      title: "Developer Tools",
-      icon: <Terminal className="text-green-400" />,
-      skills: ["VS Code", "GitHub", "Virtual Machine", "Git"]
+      title: "Core Topics",
+      icon: <BookOpen className="text-green-400" />,
+      skills: ["Data Structures", "Algorithms", "OOP", "DBMS", "Linux"]
     },
     {
-      title: "Data & Analytics",
+      title: "Tools",
       icon: <BarChart className="text-green-400" />,
-      skills: ["Microsoft Excel", "PowerBI"]
+      skills: ["VS Code", "GitHub", "Git", "Excel", "PowerBI"]
     },
     {
-      title: "Competitive Platforms",
-      icon: <Cpu className="text-green-400" />,
+      title: "Coding Sites",
+      icon: <Terminal className="text-green-400" />,
       skills: ["LeetCode", "HackerRank", "CodeChef"]
     }
   ];
@@ -39,24 +40,23 @@ const Skills: React.FC = () => {
     <div className="flex flex-col h-full justify-center">
       <div className="flex items-center mb-12">
         <div className="h-px bg-green-500 w-12 mr-4"></div>
-        <h2 className="text-3xl font-bold tracking-widest text-white uppercase">Skills & Tech</h2>
+        <h2 className="text-3xl font-black tracking-widest text-white uppercase italic">Skills</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {skillCategories.map((category, idx) => (
           <div 
             key={idx}
-            className="group relative p-6 bg-gray-900/40 border border-gray-800 rounded-xl overflow-hidden hover:border-green-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]"
+            className="group relative p-6 bg-black/40 border border-white/5 rounded-2xl overflow-hidden hover:border-green-500/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(34,197,94,0.05)]"
           >
-            {/* Hover Glitch Effect Background */}
-            <div className="absolute inset-0 bg-green-500/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,rgba(34,197,94,0.1),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-black/50 rounded-lg border border-gray-700 group-hover:border-green-500/50 transition-colors">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 bg-gray-900/80 rounded-xl border border-white/5 group-hover:border-green-500/50 transition-all shadow-inner">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-200 group-hover:text-green-400 transition-colors">
+                <h3 className="text-lg font-bold text-gray-100 uppercase tracking-tight group-hover:text-green-400 transition-colors">
                   {category.title}
                 </h3>
               </div>
@@ -65,7 +65,7 @@ const Skills: React.FC = () => {
                 {category.skills.map((skill, sIdx) => (
                   <span 
                     key={sIdx} 
-                    className="text-sm px-3 py-1 rounded bg-black/60 border border-gray-800 text-gray-400 group-hover:text-gray-200 group-hover:border-green-500/30 transition-all"
+                    className="text-xs font-bold px-3 py-1.5 rounded-lg bg-gray-900/60 border border-white/5 text-gray-500 group-hover:text-green-200 group-hover:border-green-500/20 transition-all"
                   >
                     {skill}
                   </span>
