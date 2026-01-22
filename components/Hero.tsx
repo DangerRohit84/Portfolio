@@ -20,10 +20,10 @@ const Hero: React.FC = () => {
       </p>
 
       <div className="flex gap-6 mb-16">
-        <a href="https://github.com" target="_blank" rel="noreferrer" className="p-4 rounded-xl bg-gray-900/50 hover:bg-green-500/10 text-white hover:text-green-400 transition-all border border-gray-800 hover:border-green-500/50 shadow-xl group">
+        <a href="https://github.com/DangerRohit84" target="_blank" rel="noreferrer" className="p-4 rounded-xl bg-gray-900/50 hover:bg-green-500/10 text-white hover:text-green-400 transition-all border border-gray-800 hover:border-green-500/50 shadow-xl group">
           <Github size={24} className="group-hover:scale-110 transition-transform" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-4 rounded-xl bg-gray-900/50 hover:bg-green-500/10 text-white hover:text-green-400 transition-all border border-gray-800 hover:border-green-500/50 shadow-xl group">
+        <a href="https://www.linkedin.com/in/rohit-desina" target="_blank" rel="noreferrer" className="p-4 rounded-xl bg-gray-900/50 hover:bg-green-500/10 text-white hover:text-green-400 transition-all border border-gray-800 hover:border-green-500/50 shadow-xl group">
           <Linkedin size={24} className="group-hover:scale-110 transition-transform" />
         </a>
         <a href="mailto:desinarohit2007@gmail.com" className="p-4 rounded-xl bg-gray-900/50 hover:bg-green-500/10 text-white hover:text-green-400 transition-all border border-gray-800 hover:border-green-500/50 shadow-xl group">
